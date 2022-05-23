@@ -1,0 +1,29 @@
+@media  (max-width: 768px){
+    .toggle-button {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-wraper {
+        flex-direction: column;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar.activeNavigation {
+        display: block;
+    }
+    .toggle-button.activeBurger .top-line{
+        transform: rotate(45deg);
+        top: 20px;
+    }
+    .toggle-button.activeBurger .middle-line{
+        display: none;
+    }
+    .toggle-button.activeBurger .bottom-line{
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+}

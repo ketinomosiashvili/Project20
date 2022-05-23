@@ -1,0 +1,136 @@
+.navbar-wraper{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgb(88,99,240);
+    background: linear-gradient(90deg, rgba(88,99,240,1) -10%, rgba(237,45,253,1) 100%);
+}
+.fa-battle-net{
+    font-size: 50px;
+    color: aliceblue;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-li{
+    margin: 10px;
+    font-size: 20px;
+}
+.nav-a{
+    color: #fff;
+    font-weight: bold;
+}
+.toggle-button{
+    position: absolute;
+    width: 60px;
+    padding: 0 10px;
+    height: 50px;
+    top: 20px;
+    right: 40px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.burger-line{
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background-color: aliceblue;
+    transition: all 0.5s linear;
+    border-radius: 2px;
+}
+.top-line{
+    top: 10px;
+}
+.middle-line{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bottom-line{
+    bottom: 10px;
+}
+
+/* accordion */
+.main-section{
+    max-width: 900px;
+    width:100%;
+    margin: 30px auto;    
+}
+.accordion {
+    padding: 20px;
+}
+.main-title{
+    font-size: 30px;
+    margin: 20px;
+}
+.container {
+    position: relative;
+    background: linear-gradient(0deg, rgba(93,77,240,1) -20%, rgba(207,74,251,1) 100%);
+    margin-bottom: 20px;
+}
+.accordion-title {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 25px;
+}
+.accordion-title::after{
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 20px;
+    transition: all 0.5s linear;
+}
+.accordion-description {
+    overflow: hidden;
+    font-size: 20px;
+    height: 0;
+    position: relative;
+    text-align: justify;
+    transition: 0.5s linear;
+}
+.additional-info{
+    display: flex;
+    justify-content: space-between;
+}
+.img-1{
+    background-image: url("https://files.travelness.com/media/wp-content/uploads/2019/11/bangkok-tourists.webp");
+}
+.img-2{
+    background-image: url("https://files.travelness.com/media/wp-content/uploads/2019/10/champs-elysees-shopping-in-paris.6b81b2ed.webp");
+}
+.img-3{
+    background-image: url("https://files.travelness.com/media/wp-content/uploads/2019/11/london-tourists.webp");
+}
+.img-4{
+    background-image: url("https://files.travelness.com/media/wp-content/uploads/2019/11/dubai-burj-khalifa-palm-trees.webp");
+}
+.img-div{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s linear;
+}
+.container.active .accordion-description {
+    height: 200px;
+    margin: 20px;
+    width: 300px;
+}
+.container.active .accordion-title::after {
+    transform: rotate(180deg);
+}
+.container.active .accordion-title{
+   margin-bottom: 40px;
+}
+.container.active .img-div {
+    height: 200px;
+    width: 300px;
+    margin-right: 20px;
+}
+
